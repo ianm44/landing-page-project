@@ -38,15 +38,15 @@ li {
 
 .subheader {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 8px;
     padding: 100px 0px;
 }
 
-.centerpunch {
+.skibropic {
     display: flex;
     height: auto;
-    width: 600px;
+    width: 100%;
     flex: 2 0 auto;
     border-radius: 25px;
     flex-grow: 2;
@@ -58,10 +58,17 @@ li {
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
+    max-width: 420px;
     gap: 8px;
 }
 
-.buttons {
+.subright {
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.upperbutton {
     padding: 8px 32px;
     border-radius: 8px;
     display: flex;
@@ -100,12 +107,24 @@ li {
 .fourboxes {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 32px;
 }
 
 .smallpic {
-    flex-basis: auto;
-    max-width: 200px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.captions {
+    text-align: center;
+    padding: 8px;
+}
+
+.smallpicdimensions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 180px;
 }
 
 .quoteland {
@@ -113,7 +132,7 @@ li {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 64px;
+    padding: 100px 250px;
     background-color: #E5E7EB;
 }
 
@@ -122,18 +141,54 @@ li {
     font-weight: 300;
     font-style: italic;
     color: #1f2937;
-    max-width: 830px;
 }
 
 .quoteauthor {
     display: flex;
     margin-left: auto;
     font-size: 24px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .shamelessmarketing {
     background-color: #3882f6;
     margin: 100px;
+    padding: 32px 80px;
+    border-radius: 8px;
     display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #1f2937;
+    font-size: 14px;
+    color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+}
+
+.lowerbutton {
+    border-radius: 8px;
+    padding: 8px 32px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3882f6;
+    color: #F9FAF8;
+    border: 2px solid white;
+}
+
+#marketingcaption{
+    color: #F9FAF8;
+}
+.recenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footerlink {
+    color: #E5E7EB;
+    text-decoration: none;
 }
