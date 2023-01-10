@@ -1,17 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
 body {
-    font-family: sans-serif;
+    font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
 }
 
+.superblue {
+    background-color: #1f2937;
+    padding: 0px 100px;
+}
+
 header{
     display: flex;
-    justify-content: space-around;
-    background-color: #1f2937;
+    justify-content: space-between;
+    padding-top: 16px;
 }
 
 .title {
     font-size: 24px;
+    font-weight: 800;
     color: #F9FAF8;
 }
 .headerlist{
@@ -29,25 +38,102 @@ li {
 
 .subheader {
     display: flex;
-    justify-content: space-between;
-    background-color: #1f2937;
+    justify-content: space-around;
+    gap: 8px;
+    padding: 100px 0px;
 }
 
 .centerpunch {
     display: flex;
-    width: 500px;
     height: auto;
-    flex-shrink: 0;
-    gap: 100px;
-    padding: 100px;
+    width: 600px;
+    flex: 2 0 auto;
+    border-radius: 25px;
+    flex-grow: 2;
 }
 
 .subleft {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
 }
-.subright {
-    display: flex;
 
+.buttons {
+    padding: 8px 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.bigwords {
+    font-size: 48px;
+    font-weight: 800;
+    color: #F9FAF8;
+}
+
+.subcaption {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.infozone {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 64px;
+}
+
+.randoinfo {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourboxes {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.smallpic {
+    flex-basis: auto;
+    max-width: 200px;
+}
+
+.quoteland {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 64px;
+    background-color: #E5E7EB;
+}
+
+.moneyquote {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1f2937;
+    max-width: 830px;
+}
+
+.quoteauthor {
+    display: flex;
+    margin-left: auto;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.shamelessmarketing {
+    background-color: #3882f6;
+    margin: 100px;
+    display: flex;
 }
